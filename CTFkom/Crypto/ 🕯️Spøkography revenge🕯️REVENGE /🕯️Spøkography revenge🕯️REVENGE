@@ -1,0 +1,19 @@
+🕯️Spøkography revenge🕯️REVENGE writeup
+
+Author: sem
+
+First read `encrypt.py` to understand the encryption process.
+
+🕯️📿🌕😈🕸️🔮{🦴0📿_📿🪄3_👻🦇🔮3_😈3🕷️_📿🪄1👻_📿1🔮3}
+
+The encryption is a simple substitution cipher with shuffled halloween themed list of emojis with a key‑derived PRNG seed. And then
+replacing each letter from A-Z letter with the corresponding emoji. Other symbols like {} and _ remain unchanged. Knowing the format
+was important to solving the encryption. We knew that it would have CTFkom{...} which already did alot of work for us.
+
+After removing the already known emojis we got.
+
+CTFKOM{🦴0T_T🪄3_👻🦇M3_K3🕷️_T🪄1👻_T1M3}
+
+Here i could guess the outcome of common leetspeak like N0T and TH3.
+
+Which gave me the right flag of CTFKOM{N0T_TH3_SAM3_K3Y_TH1S_T1M3}.
